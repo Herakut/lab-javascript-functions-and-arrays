@@ -1,43 +1,143 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
-
-
+function maxOfTwoNumbers(num1, num2) {
+if(num1<num2){
+  return num2
+}else if (num1>num2){
+return num1
+}else {
+  return num1
+}
+}
+maxOfTwoNumbers()
 
 // Iteration #2: Find longest word
-const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+//const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+//let emptyArray=[]
+//let oneElementArray=["ensalada"]
 
-function findLongestWord() {}
+
+//function findLongestWord(oneElementArray) {
+
+  //if (findLongestWord.length===0){
+//return null
+//} else if (findLongestWord.length===1) {
+//  return oneElementArray[0]
+//}
+//}
+
+//findLongestWord(oneElementArray)
+
+
+//(array[i].length > elementoMasLargo.length) {
+  //elementoMasLargo = array[i];
+
+  /* si (el indice del array es más grande que>)
+
+
+  */
+
+
 
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
 
+function sumNumbers() {
+  if(numbers.length===0){
+    return 0;
+  }
+
+  let sum2=0;
+  for (let i=0;i<numbers.length;i++){
+    sum2+=numbers[i];
+  }
+
+  return sum2;
+}
+  // tengoq ue crear un loop que pase por cada elemento del array
+  // por cada indice, eso se irá sumando, por lo que necesito una variable para almacenarlo
 
 
 // Iteration #3.1 Bonus:
-function sum() {}
+function sum2() {}
 
 
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
+
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+
+function averageNumbers(numbers) {
+  if(numbers.length===0){
+    return null;
+  }
+  
+  let sum=0;
+  for(let i=0;i<numbers.length;i++){
+    sum=sum+numbers[i];
+  }
+
+
+  
+  const average= sum/numbers.length;
+  return average;
+
+
+}
+
+ 
+
+
+//tengo que dividir el resultado entre la longitud+1 para obtener el resultado
+// ahora dentro de sum2 tengo el total de la suma. Eso lo tengo que dividir
+
 
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+
+function averageWordLength(words) {
+  if (words.length===0){
+    return null;
+  }
+  
+  let allWordsLength=0;
+  for (let i=0;i<words.length;i++) {
+
+    allWordsLength+=words[i].length;
+
+  }
+  
+  const average=allWordsLength/words.length;
+  return average;
+}
+
 
 // Bonus - Iteration #4.1
 function avg() {}
 
+//tengo que crear un condicional para null, again
+//ahora, unfor loop para itinerar por la longitud del array
+//variable para almacenar la longitud de todos los elementos del fucking array
+//gracias al indice, almacenar en la variable
+//conocer el valor detodosloselementosdelfucking array y dividirlo por su longitud y woilá
+
+
+
+
+
+
+
+
+
 // Iteration #5: Unique arrays
+
+
 const wordsUnique = [
   'crab',
   'poison',
@@ -52,18 +152,55 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+
+
+function uniquifyArray(words) {
+  if (words.length === 0) {
+    return null;
+  }
+  
+  const uniqueArray = [];
+  for (let i = 0; i < words.length; i++) {
+    if (!uniqueArray.includes(words[i])) {
+      uniqueArray.push(words[i]);
+    }
+  }
+  
+  return uniqueArray;
+}
+
+
 
 
 
 // Iteration #6: Find elements
+
+let existe="machine"
+let noExiste="salmonete"
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(words) {
+  for(let i=0; i<words.length; i++){
+    if (words[i]===words){
+return true
+    } else{
+      return false;
+    }
+  }
+}
+
+doesWordExist()
+//tengo que crear una funcion que busque por el array y ver si la palabra que introduzco como argumento, es la same que hay en el array
+//tiene que tener dos argumentos, lo de abajo, uno un array y otro la palabra a buscar. Eso como idea
+//variable para palabra que existe y otra que no
+//ayudate del indiseee para comparar en un loop
+//te sobra el lenght del indice
 
 
 
 // Iteration #7: Count repetition
+
+
 const wordsCount = [
   'machine',
   'matter',
@@ -78,7 +215,20 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes() {
+  for (let i=0; i<wordsCount.length; i++){
+    let count
+    if(words[i]===word){
+      count++
+    }
+    return count
+  }
+  return count
+  }
+
+
+//ejercicios de vietnam... esto es con un count para saber como va
+//el puto return no va ahiiiiiiiiii
 
 
 
