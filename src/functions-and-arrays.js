@@ -38,8 +38,6 @@ maxOfTwoNumbers()
 
 
 
-
-
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
@@ -154,19 +152,19 @@ const wordsUnique = [
 
 
 
-function uniquifyArray(words) {
-  if (words.length === 0) {
+function uniquifyArray(words){
+  if(words.length=== 0){
     return null;
   }
   
-  const uniqueArray = [];
-  for (let i = 0; i < words.length; i++) {
-    if (!uniqueArray.includes(words[i])) {
-      uniqueArray.push(words[i]);
+  const nuevaArray=[];
+  for(let i=0; i<words.length;i++) {
+    if(!nuevaArray.includes(words[i])) {
+      nuevaArray.push(words[i]);
     }
   }
   
-  return uniqueArray;
+  return nuevaArray;
 }
 
 
